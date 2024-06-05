@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula</title>
+  </head>
+  <body>
+    <div class="listas-aula">
+      <hr />
+      <h2>Listas Ordenadas</h2>
+      <div>
+        <ol type="1">
+          <li>Jose</li>
+          <li>Paulo</li>
+          <li>Marcos</li>
+        </ol>
+      </div>
+      <h2>Listas Desordenadas</h2>
+      <div>
+        <ul>
+          <li>Leonardo</li>
+          <li>Nicolas</li>
+          <li>Tiago</li>
+        </ul>
+      </div>
+      <h2>Listas Aninhadas</h2>
+      <div>
+        <ol>
+          <li>Primeiro item</li>
+          <li>Segundo item</li>
+          <ul>
+            <li>Segundo item primeiro subitem</li>
+            <li>Segundo item segundo subitem</li>
+            <li>Segundo item terceiro subitem</li>
+          </ul>
+          <li>Terceiro item</li>
+          <li>Quarto item</li>
+        </ol>
+      </div>
+      <h2>Lista por definição</h2>
+      <!--
+          DL = Definition List
+          DT = Definition Title
+          DD = Description Definition
+      -->>
+      <div>
+        <dl>
+          <dt>Sapo</dt>
+          <dd>Criatura verde e pegajosa</dd>
+          <dt>Coelho</dt>
+          <dd>Criatura quente e legal</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="tabelas-aula">
+      <div>
+        <table border="1">
+          <!--
+            thead = cabeçalho
+            tbody = corpo
+            tfoot = rodapé
+
+            tr = nova linha
+            (No cabeçalho) th = nova coluna
+            (No body) td = nova coluna
+
+            colspan="*" == Tamanho da coluna
+
+          -->
+
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Nome</th>
+              <th>Idade</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>01</td>
+              <td>José</td>
+              <td>28</td>
+            </tr>
+            <tr>
+              <td>02</td>
+              <td>Leonardo</td>
+              <td>18</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td colspan="3">Soma das idades = 46</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+
+    <div class="formularios-aula">
+      <hr />
+      <h2>Formularios</h2>
+      <div>
+        <form action="" method="get">
+          <!--action='' === enviar para outra pagina ex: ./cadastro.html-->
+          <!---->
+          <div>
+            <label for="nome">Nome:</label>
+            <br />
+            <input type="text" id="nome" name="nome" />
+          </div>
+
+          <div>
+            <label for="email">E-mail:</label>
+            <br />
+            <input type="email" id="email" name="email" />
+          </div>
+
+          <div>
+            <label for="msg">Mensagem</label>
+            <br />
+            <textarea name="mensagem" id="msg"></textarea>
+          </div>
+
+          <div>
+            <button>Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
