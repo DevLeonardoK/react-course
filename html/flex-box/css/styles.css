@@ -1,0 +1,43 @@
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center; /*Alinha na vertical*/
+  align-items: center; /*Alinha na horizontal*/
+
+  color: #fff;
+}
+
+.item:nth-child(1) {
+  background: blue;
+}
+
+.item:nth-child(1):hover {
+  background-color: yellow;
+}
+
+.item:last-child {
+  background-color: pink;
+}
+
+.item:last-child:hover {
+  background: green;
+}
+
+.item:hover {
+  background-color: aqua;
+  color: #000;
+  transition: 0.3s;
+  cursor: crosshair;
+}
+
+input:focus {
+  background: #ccc;
+  color: red;
+}
