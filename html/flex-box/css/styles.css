@@ -41,3 +41,22 @@ input:focus {
   background: #ccc;
   color: red;
 }
+
+@media (max-width: 720px) {
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  h2 {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+  }
+}
