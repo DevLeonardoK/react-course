@@ -32,20 +32,20 @@
 // calcular(57);
 
 //LAÇOS DE REPETIAÇÃO
-for (let i = 1; i <= 5; i++) {
-  console.log(`${i} x 5 == ${i * 5}`);
-}
+// for (let i = 1; i <= 5; i++) {
+//   console.log(`${i} x 5 == ${i * 5}`);
+// }
 
-console.log("=================");
-const valores = [1, 2, 3, 4, 5];
-valores.forEach((value, index) => {
-  console.log(`${value} X 5 == ${value * 5}`);
-});
+// console.log("=================");
+// const valores = [1, 2, 3, 4, 5];
+// valores.forEach((value, index) => {
+//   console.log(`${value} X 5 == ${value * 5}`);
+// });
 
-console.log("=================");
-const valores2 = [1, 2, 3, 4, 5];
-const resultado = valores2.map((value) => {
-  return value * 5;
-});
+// console.log("=================");
+// const valores2 = [1, 2, 3, 4, 5];
+// const resultado = valores2.map((value) => {
+//   return value * 5;
+// });
 
-console.log(resultado);
+// console.log(resultado);
