@@ -49,3 +49,25 @@
 // });
 
 // console.log(resultado);
+
+//Arrow function
+// const subtrair = (num1, num2) => num1 - num2;
+
+// const somar = (n1, n2) => n1 + n2;
+
+// const resultadoSoma = somar(10, 5);
+// console.log(resultadoSoma);
+
+//Arrays
+const alunos = [
+  {
+    nome: "Paulo",
+    idade: 18,
+  },
+  {
+    nome: "José",
+    idade: 25,
+  },
+];
+
+console.log(alunos[1].idade);
