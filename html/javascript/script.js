@@ -1,3 +1,8 @@
+//Function to return console.log, somente digitar a variavel que vai aparecer
+function show(info) {
+  return console.table(info);
+}
+
 //OPERADORES BÁSICOS
 // const valor = 10;
 // console.log("soma da const valor: ", valor + valor);
@@ -68,6 +73,38 @@ const alunos = [
     nome: "José",
     idade: 25,
   },
+  {
+    nome: "João",
+    idade: 6,
+  },
 ];
 
-console.log(alunos[1].idade);
+//Adiciona novo objeto no array
+// alunos.push({
+//   nome: "João",
+//   idade: 7,
+// });
+
+const alunosFiltrados = alunos.filter((aluno) => aluno.idade >= 18);
+//Retorna um array
+
+const alunoPaulo = alunos.find((aluno) => aluno.nome == "Paulo");
+//Retorna somente o objeto
+
+const alunoJose = alunos.findIndex((aluno) => aluno.nome == "José");
+//Retorna somente a posição do objeto que possui a validação
+//Retorna como objeto e não como uma array
+
+const idades = alunos.reduce((acc, aluno) => {
+  return acc + aluno.idade;
+}, 0);
+//Acumulador, variavel
+// 0 === Como se fosse um i++
+
+const ida_des = alunos.some((aluno) => aluno.idade < 10);
+//Faz a validação de true or false, se possuir algum objeto ela apresenta true
+
+const todosMenores = alunos.every((aluno) => aluno.idade < 10);
+//Faz a validação de true or false, se TODOS estiverem no mesmo estado de validação ela apresenta true, caso contrário é false
+
+show(todosMenores);
