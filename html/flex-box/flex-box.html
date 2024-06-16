@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="script.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -8,8 +9,8 @@
   </head>
   <body>
     <hr />
-    <h2>Flexbox</h2>
-    <div class="flex">
+    <h2 id="title">Flexbox</h2>
+    <div class="flex" id="lista">
       <div class="item">A</div>
       <div class="item">A</div>
       <div class="item">B</div>
@@ -18,7 +19,10 @@
       <div class="item">C</div>
     </div>
     <div class="input">
-      <input type="text" />
+      <input type="text" name="email" />
+      <button onClick="window.document.getElementById('title').remove()">
+        Remover
+      </button>
     </div>
   </body>
 </html>
