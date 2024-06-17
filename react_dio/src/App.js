@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function App() {
+function App({ nome }) {
   const [count, setCount] = useState(0);
   //Definindo os values das variaveis como 0, inicializa como 0
   const increment = () => {
@@ -18,6 +18,7 @@ function App() {
         <span>Clicks {count}</span>
         <button onClick={increment}>+</button>
       </div>
+      <h1>Bem-Vindo {nome}</h1>
     </>
   );
 }
