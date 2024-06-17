@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Button from "./components/Button";
 
 function App({ nome }) {
   const [count, setCount] = useState(0);
@@ -11,6 +12,7 @@ function App({ nome }) {
   };
 
   return (
+    //Utilizar dois ou mais elementos jsx usa o "fragment" <> & </>
     <>
       <div>This is our counter Application</div>
       <div className="flex justify-center ">
