@@ -1,24 +1,25 @@
-import globals from 'globals';
 import pluginJs from '@eslint/js';
 import pluginReact from 'eslint-plugin-react';
+import globals from 'globals';
 
 export default [
     { files: ['**/*.{js,mjs,cjs,jsx}'] },
-    { languageOptions: { globals: globals.browser } },
     pluginJs.configs.recommended,
     pluginReact.configs.flat.recommended,
     {
-        rules: {
-            'no-used-vars': 'warn',
-            'prettier/prettier': 'error'
+        languageOptions: {
+            globals: globals.browser,
         },
-        extends: [
-            'eslint:recommended',
-            'plugin:react/recommended',
-            'airbnb',
-            'prettier',
-            'plugin:prettier/recommended'
-        ],
-        plugins: ['prettier']
-    }
+    },
+
+    {
+        rules: {
+            'no-unused-vars': 'warn',
+        },
+    },
+    {
+        plugins: {
+            react: pluginReact,
+        },
+    },
 ];
