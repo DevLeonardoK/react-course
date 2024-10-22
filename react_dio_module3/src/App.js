@@ -3,6 +3,7 @@ function App() {
     word.push('je');
     word.push('mars');
     const teste = 'ola';
+    teste.split('');
 }
 
 export default App;
