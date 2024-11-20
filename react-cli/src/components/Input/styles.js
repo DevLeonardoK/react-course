@@ -25,3 +25,9 @@ export const InputText = styled.input`
     outline: none;
   }
 `;
+
+export const ErrorText = styled.p`
+  color: #ff0000;
+  font-size: 12px;
+  margin: 5px;
+`;
